@@ -70,7 +70,6 @@ app.get("/results", async (req, res) => {
         }
         // popular 
         else if (resultType === "popular") {
-            // iTunesUrl = `https://itunes.apple.com/search?term=top&entity=song&limit=13`;
             iTunesUrl = null;
         }
         // new releases 
@@ -330,7 +329,7 @@ app.get("/music", async (req, res) => {
         }
         console.log("iTunes URL:", iTunesUrl);
 
-        /* ask iTunes for the music info */
+        // ask iTunes for the music info 
         const response = await fetch(iTunesUrl);
         const data = await response.json();
         console.log("iTunes result count:", data.resultCount);
@@ -338,7 +337,7 @@ app.get("/music", async (req, res) => {
         if (!data.results || data.results.length === 0) {
             return res.status(404).send("Music not found.");
         }
-        /* render the music page */
+        // render the music page 
         res.render("music.ejs", {
             type: type,
             results: data.results
