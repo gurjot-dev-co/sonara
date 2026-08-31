@@ -1,0 +1,418 @@
+<%- include('partials/header.ejs'); %>
+
+    <!-- hero section -->
+    <section>
+        <div class="hero-section">
+
+            <div class="hero-text">
+
+                <div class="eyebrow-text">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 11.5553V9.99426C21 7.60731 20.0518 5.31813 18.364 3.6303C16.6761 1.94247 14.3869 0.994263 12 0.994263C9.61305 0.994263
+                         7.32387 1.94247 5.63604 3.6303C3.94821 5.31813 3 7.60731 3 9.99426V11.5553C2.1036 11.988 1.34695 12.664 0.816474 13.5062C0.285994
+                         14.3485 0.00306518 15.3229 0 16.3183L0 16.6823C0.00158806 18.0922 0.562386 19.4439 1.55936 20.4409C2.55633 21.4379 3.90807 21.9987
+                         5.318 22.0003H5.5C6.16304 22.0003 6.79893 21.7369 7.26777 21.268C7.73661 20.7992 8 20.1633 8 19.5003V13.5003C7.99989 12.9241
+                         7.80077 12.3657 7.43634 11.9194C7.0719 11.4732 6.56451 11.1665 6 11.0513V9.99426C6 8.40296 6.63214 6.87684 7.75736 5.75162C8.88258
+                         4.6264 10.4087 3.99426 12 3.99426C13.5913 3.99426 15.1174 4.6264 16.2426 5.75162C17.3679 6.87684 18 8.40296 18
+                         9.99426V11.0513C17.4355 11.1665 16.9281 11.4732 16.5637 11.9194C16.1992 12.3657 16.0001 12.9241 16 13.5003V19.5003C16 20.1633
+                         16.2634 20.7992 16.7322 21.268C17.2011 21.7369 17.837 22.0003 18.5 22.0003H18.682C20.0919 21.9987 21.4437 21.4379 22.4406
+                         20.4409C23.4376 19.4439 23.9984 18.0922 24 16.6823V16.3183C23.9969 15.3229 23.714 14.3485 23.1835 13.5062C22.653 12.664
+                         21.8964 11.988 21 11.5553ZM5 18.9783C4.4452 18.9008 3.93714 18.6253 3.56956 18.2026C3.20198 17.7798 2.99969 17.2384 3
+                         16.6783V16.3143C2.99969 15.7541 3.20198 15.2127 3.56956 14.79C3.93714 14.3672 4.4452 14.0917 5 14.0143V18.9783ZM21
+                         16.6783C21.0003 17.2384 20.798 17.7798 20.4304 18.2026C20.0629 18.6253 19.5548 18.9008 19 18.9783V14.0223C19.5548 14.0997
+                         20.0629 14.3752 20.4304 14.798C20.798 15.2207 21.0003 15.7621 21 16.3223V16.6783Z" fill="#ff6b6b" />
+                    </svg>
+                    <p>Find your next favourite song</p>
+                </div>
+
+                <div class="hero-heading">
+                    <h1>Find the song that <span> moves you.</span></h1>
+                </div>
+
+                <div class="description">
+                    Search tracks, artists, and albums. Preview songs and discover your next favorite in seconds.
+                </div>
+
+                <div class="search-songs">
+                    <span>
+                        <svg width="16" height="16" fill="#f8fafc" viewBox="0 0 14 14">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12
+                                6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </span>
+
+                    <input type="text" name="search-song" id="song-search" class="search-input" autocomplete="on"
+                        spellcheck="false" placeholder="Search songs...">
+
+                    <span class="arrow">
+                        <svg width="22" height="22" viewBox="0 0 20 20" fill="none">
+                            <path d="M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M14 8L18 12L14 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="album-collage">
+
+                <div class="album-card album-1">
+                    <img src="./assets/images/album covers/abbey road by the beatles.jpg" alt="Abbey Road by The Beatles">
+                    <div class="album-info">
+                        <h3>Abbey Road</h3>
+                        <p>The Beatles</p>
+                    </div>
+                </div>
+
+                <div class="album-card album-2">
+                    <img src="./assets/images/album covers/thriller by michael jackson.png" alt="Thriller by Michael Jackson">
+                    <div class="album-info">
+                        <h3>Thriller</h3>
+                        <p>Michael Jackson</p>
+                    </div>
+                </div>
+
+                <div class="album-card album-3">
+                    <img src="./assets/images/album covers/rumors by fleetwood mac.png" alt="Rumours by Fleetwood Mac">
+                    <div class="album-info">
+                        <h3>Rumours</h3>
+                        <p>Fleetwood Mac</p>
+                    </div>
+                </div>
+
+                <div class="album-card album-4">
+                    <img src="./assets/images/album covers/dark side of the moon by pink floyd.png" alt="The Dark Side of the Moon by Pink Floyd">
+                    <div class="album-info">
+                        <h3>The Dark Side of the Moon</h3>
+                        <p>Pink Floyd</p>
+                    </div>
+                </div>
+
+                <div class="album-card album-5">
+                    <img src="./assets/images/album covers/back to black by amy winehouse.png" alt="Back to Black by Amy Winehouse">
+                    <div class="album-info">
+                        <h3>Back to Black</h3>
+                        <p>Amy Winehouse</p>
+                    </div>
+                </div>
+
+                <div class="album-card album-6">
+                    <img src="./assets/images/album covers/random access memories by daft punk.png" alt="Random Access Memories by Daft Punk">
+                    <div class="album-info">
+                        <h3>Random Access Memories</h3>
+                        <p>Daft Punk</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- cards section -->
+    <section class="discover-section" id="explore">
+
+        <div class="discover-heading">
+            <p class="section-eyebrow">EXPLORE MUSIC</p>
+            <h2>Discover music you'll love.</h2>
+            <p>Find artists, albums, genres, and more.</p>
+        </div>
+
+
+        <div class="discover-grid">
+
+            <!-- ARTISTS -->
+            <article class="discover-card search-card artists-card" id="artists-card" data-type="search" data-search-type="artist">
+
+                <div class="card-icon">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 11C10.7614 11 13 8.76142 13 6C13 3.23858 10.7614 1 8 1C5.23858 1 3 3.23858 3 6C3 8.76142 5.23858 11 8 11Z" fill="currentColor" />
+                        <path d="M0 21C0 16.5817 3.58172 13 8 13C12.4183 13 16 16.5817 16 21C16 22.1046 15.1046 23 14 23H2C0.895431 23 0 22.1046 0 21Z" fill="currentColor" />
+                        <path d="M17 13C18.6569 13 20 11.6569 20 10C20 8.34315 18.6569 7 17 7C15.3431 7 14 8.34315 14 10C14 11.6569 15.3431 13 17 13Z" fill="currentColor" />
+                        <path d="M19 10V2L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+                    <h3>Artists</h3>
+                    <p>Find music from your favorite artists.</p>
+
+                    <!-- Search -->
+                    <div class="card-search">
+                        <input class="card-search-input" type="text" placeholder="Search artists..." autocomplete="off">
+                        <button class="card-search-button" type="button" aria-label="Search artists">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19A8 8 0 1 1 11 3A8 8 0 0 1 11 19Z" stroke="currentColor" stroke-width="2" />
+                                <path d="M17 17L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="card-arrow" type="button">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </article>
+
+            <!-- ALBUMS -->
+            <article class="discover-card search-card albums-card" id="albums-card" data-type="search" data-search-type="album">
+
+                <div class="card-icon">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="18" cy="9" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.318 3.63135C14.2913 3.22394 13.1718 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.1514 21 19.6464 18.1892 20.6855 14.3669"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20 9V2L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+                    <h3>Albums</h3>
+                    <p>Explore albums and discover new favorites.</p>
+
+                    <!-- Search -->
+                    <div class="card-search">
+                        <input class="card-search-input" type="text" placeholder="Search albums..." autocomplete="off">
+                        <button class="card-search-button" type="button" aria-label="Search albums">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19A8 8 0 1 1 11 3A8 8 0 0 1 11 19Z" stroke="currentColor" stroke-width="2" />
+                                <path d="M17 17L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="card-arrow" type="button" aria-label="Open album search">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </article>
+
+            <!-- GENRES -->
+            <article class="discover-card genres-card" id="genres-card" data-type="dropdown">
+
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <rect x="4" y="4" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+                        <rect x="14" y="4" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+                        <rect x="4" y="14" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+                        <rect x="14" y="14" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+                    <h3>Genres</h3>
+                    <p>Explore music by genre.</p>
+                </div>
+
+                <button class="card-arrow" type="button">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="genre-dropdown">
+                    <button class="genre-option" type="button">Pop</button>
+                    <button class="genre-option" type="button">Rock</button>
+                    <button class="genre-option" type="button">Hip-Hop</button>
+                    <button class="genre-option" type="button">Rap</button>
+                    <button class="genre-option" type="button">R&B</button>
+                    <button class="genre-option" type="button">Jazz</button>
+                    <button class="genre-option" type="button">Blues</button>
+                    <button class="genre-option" type="button">Classical</button>
+                    <button class="genre-option" type="button">Electronic</button>
+                    <button class="genre-option" type="button">Dance</button>
+                    <button class="genre-option" type="button">EDM</button>
+                    <button class="genre-option" type="button">House</button>
+                    <button class="genre-option" type="button">Techno</button>
+                    <button class="genre-option" type="button">Dubstep</button>
+                    <button class="genre-option" type="button">Alternative</button>
+                    <button class="genre-option" type="button">Indie</button>
+                    <button class="genre-option" type="button">Metal</button>
+                    <button class="genre-option" type="button">Hard Rock</button>
+                    <button class="genre-option" type="button">Punk</button>
+                    <button class="genre-option" type="button">Reggae</button>
+                    <button class="genre-option" type="button">Latin</button>
+                    <button class="genre-option" type="button">Folk</button>
+                    <button class="genre-option" type="button">Gospel</button>
+                    <button class="genre-option" type="button">Soul</button>
+                    <button class="genre-option" type="button">Soundtrack</button>
+                    <button class="genre-option" type="button">Children</button>
+                    <button class="genre-option" type="button">Holiday</button>
+                    <button class="genre-option" type="button">K-Pop</button>
+                    <button class="genre-option" type="button">J-Pop</button>
+                    <button class="genre-option" type="button">Anime</button>
+                </div>
+
+            </article>
+
+            <!-- COUNTRIES -->
+            <article class="discover-card countries-card" id="countries-card" data-type="dropdown">
+
+                <div class="card-icon">
+                    <svg width="29" height="29" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C9.62663 0 7.30655 0.703788 5.33316 2.02236C3.35977 3.34094 1.8217 5.21509 0.913451 7.4078C0.00519943
+                         9.60051 -0.232441 12.0133 0.230582 14.3411C0.693605 16.6689 1.83649 18.8071 3.51472 20.4853C5.19295 22.1635 7.33115
+                         23.3064 9.65892 23.7694C11.9867 24.2324 14.3995 23.9948 16.5922 23.0866C18.7849 22.1783 20.6591 20.6402 21.9776
+                         18.6668C23.2962 16.6935 24 14.3734 24 12C23.9966 8.81846 22.7312 5.76821 20.4815 3.51852C18.2318 1.26883 15.1815
+                         0.00344108 12 0V0ZM20.941 11H17.463C17.2362 8.39489 16.4558 5.86823 15.174 3.589C16.7235 4.17499 18.0815 5.17671
+                         19.0989 6.48411C20.1163 7.79151 20.7537 9.35402 20.941 11ZM9.68501 14H14.315C13.9213 16.0948 13.1359 18.0964 12
+                         19.9C10.864 18.0965 10.0786 16.0948 9.68501 14ZM9.55301 11C9.83307 8.54378 10.67 6.18386 12 4.1C13.3302 6.18379
+                         14.1671 8.54374 14.447 11H9.55301ZM8.82601 3.589C7.54417 5.86823 6.76377 8.39489 6.53701 11H3.05901C3.24635
+                         9.35402 3.88372 7.79151 4.9011 6.48411C5.91847 5.17671 7.2765 4.17499 8.82601 3.589ZM3.23201 14H6.64101C6.97749
+                         16.2511 7.7177 18.423 8.82601 20.411C7.43814 19.885 6.20149 19.0248 5.22569 17.9064C4.24989 16.7881 3.56509
+                         15.4463 3.23201 14ZM15.174 20.411C16.2828 18.4231 17.023 16.2512 17.359 14H20.768C20.4349 15.4463 19.7501
+                         16.7881 18.7743 17.9064C17.7985 19.0248 16.5619 19.885 15.174 20.411Z" fill="currentColor" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+                    <h3>Countries</h3>
+                    <p>Discover music from around the world.</p>
+                </div>
+
+                <button class="card-arrow" type="button" aria-label="Choose a country">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="country-dropdown">
+                    <button class="country-option" type="button" data-country="AR">Argentina</button>
+                    <button class="country-option" type="button" data-country="AU">Australia</button>
+                    <button class="country-option" type="button" data-country="AT">Austria</button>
+                    <button class="country-option" type="button" data-country="BE">Belgium</button>
+                    <button class="country-option" type="button" data-country="BR">Brazil</button>
+                    <button class="country-option" type="button" data-country="CA">Canada</button>
+                    <button class="country-option" type="button" data-country="CL">Chile</button>
+                    <button class="country-option" type="button" data-country="CN">China</button>
+                    <button class="country-option" type="button" data-country="CO">Colombia</button>
+                    <button class="country-option" type="button" data-country="CZ">Czech Republic</button>
+                    <button class="country-option" type="button" data-country="DK">Denmark</button>
+                    <button class="country-option" type="button" data-country="EG">Egypt</button>
+                    <button class="country-option" type="button" data-country="FI">Finland</button>
+                    <button class="country-option" type="button" data-country="FR">France</button>
+                    <button class="country-option" type="button" data-country="DE">Germany</button>
+                    <button class="country-option" type="button" data-country="GR">Greece</button>
+                    <button class="country-option" type="button" data-country="HK">Hong Kong</button>
+                    <button class="country-option" type="button" data-country="HU">Hungary</button>
+                    <button class="country-option" type="button" data-country="IN">India</button>
+                    <button class="country-option" type="button" data-country="ID">Indonesia</button>
+                    <button class="country-option" type="button" data-country="IE">Ireland</button>
+                    <button class="country-option" type="button" data-country="IL">Israel</button>
+                    <button class="country-option" type="button" data-country="IT">Italy</button>
+                    <button class="country-option" type="button" data-country="JP">Japan</button>
+                    <button class="country-option" type="button" data-country="KR">South Korea</button>
+                    <button class="country-option" type="button" data-country="MY">Malaysia</button>
+                    <button class="country-option" type="button" data-country="MX">Mexico</button>
+                    <button class="country-option" type="button" data-country="NL">Netherlands</button>
+                    <button class="country-option" type="button" data-country="NZ">New Zealand</button>
+                    <button class="country-option" type="button" data-country="NO">Norway</button>
+                    <button class="country-option" type="button" data-country="PH">Philippines</button>
+                    <button class="country-option" type="button" data-country="PL">Poland</button>
+                    <button class="country-option" type="button" data-country="PT">Portugal</button>
+                    <button class="country-option" type="button" data-country="RO">Romania</button>
+                    <button class="country-option" type="button" data-country="RU">Russia</button>
+                    <button class="country-option" type="button" data-country="SA">Saudi Arabia</button>
+                    <button class="country-option" type="button" data-country="SG">Singapore</button>
+                    <button class="country-option" type="button" data-country="ZA">South Africa</button>
+                    <button class="country-option" type="button" data-country="ES">Spain</button>
+                    <button class="country-option" type="button" data-country="SE">Sweden</button>
+                    <button class="country-option" type="button" data-country="CH">Switzerland</button>
+                    <button class="country-option" type="button" data-country="TW">Taiwan</button>
+                    <button class="country-option" type="button" data-country="TH">Thailand</button>
+                    <button class="country-option" type="button" data-country="TR">Turkey</button>
+                    <button class="country-option" type="button" data-country="AE">United Arab Emirates</button>
+                    <button class="country-option" type="button" data-country="GB">United Kingdom</button>
+                    <button class="country-option" type="button" data-country="US">United States</button>
+                    <button class="country-option" type="button" data-country="VN">Vietnam</button>
+                </div>
+
+            </article>
+
+            <!-- POPULAR -->
+            <article class="discover-card navigation-card popular-card" id="popular-card"  data-type="popular">
+
+                <div class="card-icon">
+                    <svg width="34" height="34" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.8252 12.5439C14.7677 8.45828 21.0543 8.3247 25.1504 12.1318L26.002 12.9238L26.8535 12.1318C30.9368
+                         8.33052 37.2344 8.45462 41.1719 12.5439C45.1263 16.6552 45.2694 23.2145 41.6025 27.4932L25.998 43.6973L10.3955
+                         27.4941C6.72829 23.215 6.8753 16.6434 10.8262 12.5449L10.8252 12.5439Z" stroke="currentColor" stroke-width="2.5" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+                    <h3>Popular</h3>
+                    <p>See what's trending right now.</p>
+                </div>
+
+                <button class="card-arrow" type="button">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </article>
+
+            <!-- NEW RELEASES -->
+            <article class="discover-card navigation-card releases-card" id="releases-card" data-type="new-release">
+
+                <div class="card-icon">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18V7L18 4V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="6.5" cy="18" r="2.5" fill="currentColor" />
+                        <circle cx="15.5" cy="15" r="2.5" fill="currentColor" />
+                        <path d="M19 4.5L20 7L22.5 8L20 9L19 11.5L18 9L15.5 8L18 7Z" stroke="#FFD166" fill="#FFD166" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+                    <h3>New Releases</h3>
+                    <p>Discover the latest music.</p>
+                </div>
+
+                <button class="card-arrow" type="button">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </article>
+
+            <!-- K-POP → ♫-->
+            <article class="discover-card navigation-card kpop-card" id="kpop-card" data-type="kpop">
+
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <rect x="8" y="3" width="8" height="12" rx="4" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M5 11V12C5 15.866 8.134 19 12 19C15.866 19 19 15.866 19 12V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        <path d="M12 19V22M9 22H15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        <!-- sparkle -->
+                        <path d="M20 3.5L20.7 5.3L22.5 6L20.7 6.7L20 8.5L19.3 6.7L17.5 6L19.3 5.3Z" fill="#FFD166" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+                    <h3>K-Pop</h3>
+                    <p>Explore popular Korean music.</p>
+                </div>
+
+                <button class="card-arrow" type="button">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <%- include('partials/footer.ejs'); %>

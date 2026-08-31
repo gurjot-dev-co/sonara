@@ -1,0 +1,104 @@
+<%- include('partials/header.ejs'); %>
+
+<div class="signup-page">
+
+    <section class="signup-content">
+
+        <div class="signup-header">
+            <p class="signup-eyebrow">Join Sonara</p>
+            <h1>Create your account</h1>
+            <p class="signup-description">Join Sonara and discover music you'll love.</p>
+        </div>
+
+        <form class="signup-form">
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-input">
+                    <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password" required>
+                    <button type="button" class="password-toggle" aria-label="Show password"> ◉ </button>
+                </div>
+            </div>
+
+            <!-- Confirm password -->
+            <div class="form-group">
+                <label for="confirm-password">Confirm password</label>
+                <div class="password-input">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Repeat your password" autocomplete="new-password" required>
+                    <button type="button" class="password-toggle" aria-label="Show password"> ◉ </button>
+                </div>
+            </div>
+
+            <!-- Terms -->
+            <label class="terms">
+                <input type="checkbox" name="terms" required>
+                <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>. </span>
+            </label>
+
+            <!-- Submit -->
+            <button type="submit" class="create-account">
+                <span>Create account</span>
+            </button>
+
+        </form>
+
+        <p class="signin-link">Already have an account?
+            <a href="/logIn">Sign in</a>
+        </p>
+
+    </section>
+
+    <section class="signup-visual">
+
+        <div class="music-atmosphere"></div>
+
+        <!-- subtle background wave -->
+        <div class="ambient-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- floating symbols -->
+        <span class="music-symbol note-one">♪</span>
+        <span class="music-symbol note-two">♫</span>
+        <span class="music-symbol note-three">♪</span>
+        <span class="music-symbol note-four">♬</span>
+        <span class="music-symbol sparkle-one">✦</span>
+        <span class="music-symbol sparkle-two">✧</span>
+        <span class="music-symbol sparkle-three">✦</span>
+
+        <!-- central glow -->
+        <div class="music-core">
+            <div class="core-ring"></div>
+            <div class="core-dot"></div>
+        </div>
+
+        <p class="visual-text">
+            Your music.<br>
+            Your world.
+        </p>
+
+    </section>
+
+</div>
+
+<div class="copyright">
+    <p>© <%= new Date().getFullYear() %> Sonara</p>
+    <p>Made for music lovers.</p>
+</div>

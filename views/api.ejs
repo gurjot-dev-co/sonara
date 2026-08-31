@@ -1,0 +1,139 @@
+<%- include("partials/header.ejs") %>
+
+<div class="api-page">
+
+    <section class="api-hero">
+        <span class="api-label">API &amp; DATA</span>
+        <h1>How Sonara<br>gets its music data.</h1>
+        <p> Sonara uses Apple's iTunes Search API to search for and
+            retrieve music information used throughout the website.
+        </p>
+    </section>
+
+    <section class="api-section">
+        <div class="section-heading">
+            <span>01</span>
+            <h2>Data source</h2>
+        </div>
+        <div class="section-content">
+            <p> Sonara uses the iTunes Search API provided by Apple
+                to retrieve information about artists, albums, songs,
+                genres, and other music content.
+            </p>
+            <p> The API allows Sonara to search Apple's available music
+                catalog and use the returned information to create
+                the music discovery experience on the website.
+            </p>
+        </div>
+    </section>
+
+    <section class="api-section">
+        <div class="section-heading">
+            <span>02</span>
+            <h2>What Sonara uses</h2>
+        </div>
+        <div class="data-grid">
+            <article class="data-card">
+                <span class="data-number">01</span>
+                <h3>Artists</h3>
+                <p> Artist names and information used to help users
+                    discover and explore artists.
+                </p>
+            </article>
+            <article class="data-card">
+                <span class="data-number">02</span>
+                <h3>Albums</h3>
+                <p> Album names, artwork, release information, and
+                    related music data.
+                </p>
+            </article>
+            <article class="data-card">
+                <span class="data-number">03</span>
+                <h3>Songs</h3>
+                <p> Track names, artists, albums, and available
+                    promotional previews.
+                </p>
+            </article>
+            <article class="data-card">
+                <span class="data-number">04</span>
+                <h3>Genres</h3>
+                <p> Genre information used to organize and explore
+                    different types of music.
+                </p>
+            </article>
+            <article class="data-card">
+                <span class="data-number">05</span>
+                <h3>Artwork</h3>
+                <p> Album artwork made available through the music
+                    catalog data.
+                </p>
+            </article>
+            <article class="data-card">
+                <span class="data-number">06</span>
+                <h3>Previews</h3>
+                <p> Short music previews made available for
+                    promotional music discovery.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="api-section">
+        <div class="section-heading">
+            <span>03</span>
+            <h2>Searching</h2>
+        </div>
+        <div class="section-content">
+            <p> When you search for music on Sonara, your search is
+                processed and the relevant information is retrieved
+                from the iTunes Search API.
+            </p>
+            <p> Search results can include artists, albums, songs,
+                and other music-related information depending on
+                the type of search being performed.
+            </p>
+        </div>
+    </section>
+
+    <section class="api-section">
+        <div class="section-heading">
+            <span>04</span>
+            <h2>Example request</h2>
+        </div>
+        <div class="code-block">
+            <div class="code-header">
+                <span>iTunes Search API</span>
+            </div>
+            <pre><code>https://itunes.apple.com/search?term=daft%20punk&amp;entity=song</code></pre>
+        </div>
+        <p class="code-description">
+            This is an example of the type of request that can be
+            made to search the iTunes music catalog.
+        </p>
+    </section>
+
+    <section class="api-section legal-section">
+        <div class="section-heading">
+            <span>05</span>
+            <h2>Attribution &amp; usage</h2>
+        </div>
+        <div class="section-content">
+            <p> Sonara uses promotional content made available through
+                Apple's iTunes Search API for music discovery and
+                promotional purposes.
+            </p>
+            <p> Song previews are provided courtesy of iTunes and are
+                intended to allow users to discover the associated
+                music.
+            </p>
+            <p class="legal-note">
+                Apple, iTunes, and related trademarks belong to Apple Inc.
+                Sonara is not affiliated with, sponsored by, or endorsed
+                by Apple.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<%- include("partials/footer.ejs") %>

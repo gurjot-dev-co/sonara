@@ -1,0 +1,75 @@
+<%- include('partials/header.ejs') %>
+
+<section class="results-page">
+    <section class="results-heading">
+        <div>
+            <p class="results-label">RESULTS</p>
+            <h1> <%= (term || type)
+        // .replace(/[-\_]/g, " ") replaces - and _ with a space, g (= global) replaces all matching chars & not only the 1st one
+                    .replace(/[-_]/g, " ")
+        // /\b\w/g looks for the 1st char of each word, char.toUpperCase() takes that 1st char and converts it to uppercase.
+                    .replace(/\b\w/g, char => char.toUpperCase()) %>
+            </h1>
+            <p class="results-type"> <%= type %>
+                <% if (results) { %>
+                    <span>•</span>
+                    <%= results.length %> results
+                <% } %>
+            </p>
+        </div>
+    </section>
+
+    <section class="results-grid">
+        <% if (results && results.length > 0) { %>
+            <% results.forEach(result => { %>
+            <!-- in 'type' param , if type is an artist send artist id , if album send collection id, else send  track id -->
+                <article class="result-card" onclick="openMusic('<%= type %>', '<%= type === "artist" ? result.artistId : type === "album" ? result.collectionId : result.trackId %>')">
+                    <% if (result.artworkUrl100) { %>
+                        <div class="result-artwork-wrapper">
+                            <img class="result-artwork" src="<%= result.artworkUrl100.replace('100x100', '400x400') %>"
+                                alt="<%= result.trackName || result.collectionName || result.artistName || 'Music artwork' %>" />
+                        </div>
+                    <% } else { %>
+                        <!-- Artist fallback -->
+                        <div class="artist-placeholder">
+                            <span> <%= (result.artistName || "A").charAt(0).toUpperCase() %> </span>
+                        </div>
+                    <% } %>
+
+                    <div class="result-info">
+                        <% if (type === "artist") { %>
+                            <p class="result-kind"> ARTIST </p>
+                            <h2> <%= result.artistName || "Unknown Artist" %> </h2>
+                            <% if (result.primaryGenreName) { %>
+                                <p class="result-genre"> <%= result.primaryGenreName %> </p>
+                            <% } %>
+                        <% } else if (type === "album") { %>
+                            <p class="result-kind"> ALBUM </p>
+                            <h2> <%= result.collectionName || "Unknown Album" %> </h2>
+                            <% if (result.artistName) { %>
+                                <p class="result-artist"> <%= result.artistName %> </p>
+                            <% } %>
+                        <% } else { %>
+                            <p class="result-kind"> SONG </p>
+                            <h2> <%= result.trackName || "Unknown Song" %> </h2>
+                            <% if (result.artistName) { %>
+                                <p class="result-artist"> <%= result.artistName %> </p>
+                            <% } %>
+                            <% if (result.primaryGenreName) { %>
+                                <span class="result-genre"> <%= result.primaryGenreName %> </span>
+                            <% } %>
+                        <% } %>
+                    </div>
+                </article>
+            <% }) %>
+        <% } else { %>
+            <div class="no-results">
+                <div class="no-results-icon"> ♪ </div>
+                <h2> No results found </h2>
+                <p> We couldn't find anything matching your search. </p>
+            </div>
+        <% } %>
+    </section>
+</section>
+
+<%- include('partials/footer.ejs') %>

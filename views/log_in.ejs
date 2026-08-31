@@ -1,0 +1,91 @@
+<%- include('partials/header.ejs'); %>
+
+<main class="auth-page">
+
+    <!-- login form on left -->
+    <section class="auth-content">
+
+        <div class="auth-form">
+            <div class="auth-heading">
+                <h1>Welcome back.</h1>
+                <p>Sign in to continue listening.</p>
+            </div>
+
+            <form class="login-form">
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <div class="password-label">
+                        <label for="password">Password</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                </div>
+
+                <button type="submit" class="auth-button">Sign In</button>
+
+            </form>
+
+            <div class="auth-divider">
+                <span></span>
+                <p>or</p>
+                <span></span>
+            </div>
+
+            <p class="auth-switch">Don't have an account?
+                <a href="/signup.html">Sign up</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- visual content on the right  -->
+    <section class="signup-visual">
+
+        <div class="music-atmosphere"></div>
+
+        <div class="ambient-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <span class="music-symbol note-one">♪</span>
+        <span class="music-symbol note-two">♫</span>
+        <span class="music-symbol note-three">♪</span>
+        <span class="music-symbol note-four">♬</span>
+        <span class="music-symbol sparkle-one">✦</span>
+        <span class="music-symbol sparkle-two">✧</span>
+        <span class="music-symbol sparkle-three">✦</span>
+
+        <div class="music-core">
+            <div class="core-ring"></div>
+            <div class="core-dot"></div>
+        </div>
+
+        <p class="visual-text">
+            Your music.<br>
+            Your world.
+        </p>
+
+    </section>
+
+</main>
+
+<div class="copyright">
+    <p>© <%= new Date().getFullYear() %> Sonara</p>
+    <p>Made for music lovers.</p>
+</div>
