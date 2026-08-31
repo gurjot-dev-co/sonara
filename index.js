@@ -1,5 +1,5 @@
 import express from "express";
-import bodyParser, { urlencoded } from "body-parser";
+import bodyParser from "body-parser";
 import env from "dotenv";
 
 env.config();
@@ -76,11 +76,11 @@ app.get("/results", async (req, res) => {
         else if (resultType === "new-release") {
             iTunesUrl = null;
         }
-        /* K-Pop */
+        // K-Pop 
         else if (resultType === "kpop") {
             iTunesUrl = `https://itunes.apple.com/search?term=k-pop&entity=song`;
         }
-        /* unknown type */
+        // unknown type 
         else {
             return res.status(400).send("Unknown result type.");
         }
