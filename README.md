@@ -6,7 +6,7 @@ Sonara is a responsive music discovery application built with **Node.js**, **Exp
 
 ## Live Demo
 
-**Live Website:** [hereeeeeeeeeeee]
+**Live Website:** [https://sonara-8jua.onrender.com]
 
 ---
 
