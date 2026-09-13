@@ -58,6 +58,66 @@ header {
         0 4px 12px rgba(138, 92, 255, 0.25);
 }
 
+@media (max-width: 1050px) {
+    header {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+    .page-link ul {
+        gap: 0.3vw;
+    }
+    .page-link ul li a {
+        padding: 9px 14px;
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .logo img {
+        max-width: 100px;
+        height: auto;
+    }
+    .page-link ul {
+        gap: 0;
+    }
+    .page-link ul li a {
+        padding: 8px 11px;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        font-size: 17px;
+        padding: 0 12px;
+    }
+    .logo img {
+        max-width: 80px;
+    }
+    .page-link ul {
+        gap: 2px;
+    }
+    .page-link ul li a {
+        padding: 7px 8px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        font-size: 12.5px;
+        padding: 0 10px;
+    }
+    .logo img {
+        max-width: 55px;
+    }
+    .page-link ul li a {
+        padding: 6px 6px;
+    }
+}
+
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -321,6 +381,277 @@ header {
         translateY(-10px) scale(1.06) rotate(0deg);
 }
 
+/* Large Tablets / Small Laptops  */
+@media (max-width: 1100px) {
+    .hero-section {
+        gap: 30px;
+        padding: 30px;
+    }
+    .hero-text {
+        flex: 1;
+    }
+    .hero-heading h1 {
+        font-size: 3.2rem;
+    }
+    .description {
+        font-size: 1.15rem;
+    }
+    .album-collage {
+        width: 520px;
+        height: 450px;
+        flex-shrink: 0;
+    }
+    .album-1 {
+        width: 170px;
+        height: 170px;
+        top: 20px;
+        left: 120px;
+    }
+    .album-2 {
+        width: 140px;
+        height: 140px;
+        top: 125px;
+        left: 5px;
+    }
+    .album-3 {
+        width: 145px;
+        height: 145px;
+        top: 110px;
+        right: 5px;
+    }
+    .album-4 {
+        width: 200px;
+        height: 200px;
+        bottom: 15px;
+        left: 105px;
+    }
+    .album-5 {
+        width: 125px;
+        height: 125px;
+        bottom: 20px;
+        left: 10px;
+    }
+    .album-6 {
+        width: 120px;
+        height: 120px;
+        bottom: 35px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 25px;
+    }
+    .hero-text {
+        width: 100%;
+        margin: 0;
+    }
+    .eyebrow-text {
+        justify-content: center;
+    }
+    .hero-heading h1 {
+        font-size: 3.3rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .description {
+        font-size: 1.15rem;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    .search-songs {
+        margin: 30px 0 10px;
+    }
+    .album-collage {
+        width: 600px;
+        max-width: 100%;
+        height: 430px;
+        margin-top: 20px;
+    }
+    .album-1 {
+        width: 175px;
+        height: 175px;
+        left: 50%;
+        transform: translateX(-50%) rotate(4deg);
+    }
+    .album-2 {
+        width: 140px;
+        height: 140px;
+        left: 10%;
+    }
+    .album-3 {
+        width: 145px;
+        height: 145px;
+        right: 10%;
+    }
+    .album-4 {
+        width: 210px;
+        height: 210px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-3deg);
+    }
+    .album-5 {
+        width: 125px;
+        height: 125px;
+        left: 8%;
+    }
+    .album-6 {
+        width: 120px;
+        height: 120px;
+        right: 8%;
+    }
+    .album-card:hover {
+        transform: translateY(-8px) scale(1.04) rotate(0deg);
+    }
+}
+
+@media (max-width: 750px) {
+    .hero-section {
+        padding: 35px 18px;
+    }
+    .eyebrow-text p {
+        font-size: 1rem;
+    }
+    .hero-heading h1 {
+        font-size: 2.5rem;
+        line-height: 1.15;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .hero-heading h1 span {
+        margin-left: 3px;
+    }
+    .description {
+        font-size: 1rem;
+        line-height: 1.6;
+        letter-spacing: .5px;
+    }
+    .search-songs {
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        padding: 14px 20px;
+        margin: 25px 0 5px;
+        gap: 8px;
+    }
+    .search-input {
+        min-width: 0;
+        margin: 0 8px;
+        font-size: 15px;
+    }
+    .album-collage {
+        width: 100%;
+        max-width: 430px;
+        height: 350px;
+        margin-top: 20px;
+    }
+    .album-card {
+        border-radius: 14px;
+    }
+    .album-1 {
+        width: 130px;
+        height: 130px;
+        top: 10px;
+        left: 50%;
+    }
+    .album-2 {
+        width: 105px;
+        height: 105px;
+        top: 90px;
+        left: 3%;
+    }
+    .album-3 {
+        width: 110px;
+        height: 110px;
+        top: 80px;
+        right: 3%;
+    }
+    .album-4 {
+        width: 155px;
+        height: 155px;
+        bottom: 10px;
+        left: 50%;
+    }
+    .album-5 {
+        width: 90px;
+        height: 90px;
+        bottom: 15px;
+        left: 5%;
+    }
+    .album-6 {
+        width: 88px;
+        height: 88px;
+        bottom: 25px;
+        right: 5%;
+    }
+    .album-info {
+        padding: 30px 10px 10px;
+    }
+    .album-info h3 {
+        font-size: 13px;
+    }
+    .album-info p {
+        font-size: 11px;
+    }
+    .album-6 .album-info,
+    .album-5 .album-info {
+        padding: 20px 7px 7px;
+    }
+    .album-6 .album-info h3 {
+        font-size: 11px;
+    }
+    .album-6 .album-info p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-section {
+        padding: 30px 15px;
+    }
+    .hero-heading h1 {
+        font-size: 2.15rem;
+    }
+    .description {
+        font-size: .95rem;
+    }
+    .search-songs {
+        padding: 13px 16px;
+    }
+    .album-collage {
+        height: 300px;
+    }
+    .album-1 {
+        width: 110px;
+        height: 110px;
+    }
+    .album-2 {
+        width: 90px;
+        height: 90px;
+        top: 80px;
+    }
+    .album-3 {
+        width: 95px;
+        height: 95px;
+        top: 70px;
+    }
+    .album-4 {
+        width: 135px;
+        height: 135px;
+    }
+    .album-5 {
+        width: 78px;
+        height: 78px;
+    }
+    .album-6 {
+        width: 75px;
+        height: 75px;
+    }
+}
+
 .discover-section {
     width: 100%;
     max-width: 1250px;
@@ -363,8 +694,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
 }
-
-/* CARD */
 
 .discover-card {
     position: relative;
@@ -412,8 +741,6 @@ header {
     pointer-events: none;
 }
 
-/* Hover */
-
 .discover-card:hover {
     transform: translateY(-7px);
     border-color: var(--card-border);
@@ -426,8 +753,6 @@ header {
     transform: scale(1.5);
     opacity: 0.55;
 }
-
-/* CARD ICON */
 
 .card-icon {
     position: relative;
@@ -462,7 +787,6 @@ header {
     transition: opacity 0.4s ease,
         filter 0.4s ease,
         transform 0.4s ease;
-
 }
 
 .discover-card:hover svg {
@@ -470,8 +794,6 @@ header {
     transform: scale(1.08);
     filter: drop-shadow(0 0 10px var(--card-glow));
 }
-
-/* CARD TEXT */
 
 .card-content {
     position: relative;
@@ -492,8 +814,6 @@ header {
     font-size: 14px;
     line-height: 1.5;
 }
-
-/* ARROW */
 
 .card-arrow {
     position: absolute;
