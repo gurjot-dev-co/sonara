@@ -474,8 +474,8 @@ header {
     .album-1 {
         width: 175px;
         height: 175px;
-        left: 50%;
-        transform: translateX(-50%) rotate(4deg);
+        left: 35%;
+        transform: rotate(4deg);
     }
     .album-2 {
         width: 140px;
@@ -490,8 +490,8 @@ header {
     .album-4 {
         width: 210px;
         height: 210px;
-        left: 50%;
-        transform: translateX(-50%) rotate(-3deg);
+        left: 32%;
+        transform: rotate(-3deg);
     }
     .album-5 {
         width: 125px;
@@ -555,7 +555,6 @@ header {
         width: 130px;
         height: 130px;
         top: 10px;
-        left: 50%;
     }
     .album-2 {
         width: 105px;
@@ -573,7 +572,6 @@ header {
         width: 155px;
         height: 155px;
         bottom: 10px;
-        left: 50%;
     }
     .album-5 {
         width: 90px;
