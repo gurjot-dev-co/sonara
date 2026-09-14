@@ -56,8 +56,7 @@
     border-radius: 16px;
     background: #111113;
     border: 1px solid rgba(255, 255, 255, 0.07);
-    transition:
-        transform 0.25s ease,
+    transition: transform 0.25s ease,
         border-color 0.25s ease,
         background 0.25s ease;
 }
@@ -92,8 +91,7 @@
     align-items: center;
     justify-content: center;
     aspect-ratio: 1 / 1;
-    background:
-        linear-gradient(
+    background: linear-gradient(
             135deg,
             rgba(168, 85, 247, 0.18),
             rgba(236, 72, 153, 0.08)
@@ -234,7 +232,6 @@
 
 
 /* music detail page */
-
 .music-page {
     width: min(1100px, calc(100% - 80px));
     margin: 0 auto;
@@ -325,13 +322,11 @@
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.045);
     backdrop-filter: blur(12px);
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.25),
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25),
         inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
-/* Play button */
-
+/* play button */
 .song-play-button {
     display: flex;
     align-items: center;
@@ -345,8 +340,7 @@
     background: rgba(168, 85, 247, 0.12);
     color: #ffffff;
     cursor: pointer;
-    transition:
-        background 0.2s ease,
+    transition: background 0.2s ease,
         border-color 0.2s ease,
         transform 0.2s ease;
 }
@@ -416,8 +410,7 @@
     background: transparent;
     color: rgba(255, 255, 255, 0.65);
     cursor: pointer;
-    transition:
-        background 0.2s ease,
+    transition: background 0.2s ease,
         color 0.2s ease;
 }
 
@@ -464,7 +457,6 @@
 
 .album-tracks {
     width: 100%;
-
     margin-top: 30px;
 }
 
@@ -584,8 +576,7 @@
     background: transparent;
     color: #ffffff;
     cursor: pointer;
-    transition:
-        background 0.2s ease,
+    transition: background 0.2s ease,
         border-color 0.2s ease,
         transform 0.2s ease;
 }

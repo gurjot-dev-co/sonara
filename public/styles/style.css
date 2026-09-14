@@ -53,8 +53,7 @@ header {
 .page-link ul li a:hover {
     background: linear-gradient(135deg, #FF5F9E 0%, #B14EFF 55%, #4D8CFF 100%);
     transform: translateY(-2px);
-    box-shadow:
-        0 12px 32px rgba(255, 79, 179, 0.35),
+    box-shadow: 0 12px 32px rgba(255, 79, 179, 0.35),
         0 4px 12px rgba(138, 92, 255, 0.25);
 }
 
@@ -300,8 +299,7 @@ header {
 .album-info h3,
 .album-info p {
     color: #f8fafc;
-    text-shadow:
-        0 2px 6px rgba(0, 0, 0, 0.9),
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9),
         0 0 12px rgba(0, 0, 0, 0.6);
 }
 
@@ -374,11 +372,9 @@ header {
 
 .album-card:hover {
     z-index: 10;
-    box-shadow:
-        0 30px 60px rgba(0, 0, 0, 0.45),
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45),
         0 0 35px rgba(177, 78, 255, 0.22);
-    transform:
-        translateY(-10px) scale(1.06) rotate(0deg);
+    transform: translateY(-10px) scale(1.06) rotate(0deg);
 }
 
 /* Large Tablets / Small Laptops  */
@@ -666,10 +662,7 @@ header {
     font-size: 1.2em;
     font-weight: 600;
     letter-spacing: 2px;
-    background: linear-gradient(90deg,
-            #ff5f9e,
-            #b14eff,
-            #4d8cff);
+    background: linear-gradient(90deg, #ff5f9e, #b14eff, #4d8cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -702,14 +695,12 @@ header {
     cursor: pointer;
     background: #0d0d14;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    transition:
-        transform 0.35s ease,
+    transition: transform 0.35s ease,
         border-color 0.35s ease,
         box-shadow 0.35s ease;
 }
 
 /* Color inside card */
-
 .discover-card::before {
     content: "";
     position: absolute;
@@ -721,13 +712,11 @@ header {
     background: var(--card-glow);
     filter: blur(60px);
     opacity: 0.35;
-    transition:
-        transform 0.4s ease,
+    transition: transform 0.4s ease,
         opacity 0.4s ease;
 }
 
 /* Top-left corner shine */
-
 .discover-card::after {
     content: "";
     position: absolute;
@@ -742,8 +731,7 @@ header {
 .discover-card:hover {
     transform: translateY(-7px);
     border-color: var(--card-border);
-    box-shadow:
-        0 18px 45px rgba(0, 0, 0, 0.35),
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35),
         0 0 30px var(--card-shadow);
 }
 
@@ -826,8 +814,7 @@ header {
     color: #f8fafc;
     font-size: 20px;
     cursor: pointer;
-    transition:
-        transform 0.3s ease,
+    transition: transform 0.3s ease,
         background 0.3s ease;
 }
 
@@ -851,7 +838,6 @@ header {
 }
 
 /* CARD COLORS */
-
 .artists-card {
     --card-glow: #ff4fa3;
     --card-border: rgba(255, 79, 163, 0.55);
@@ -904,18 +890,16 @@ header {
     .discover-section {
         padding: 0 20px 70px;
     }
-
     .discover-grid {
         grid-template-columns: 1fr;
     }
-
     .discover-heading h2 {
         font-size: 32px;
     }
 }
 
-/* footer */
 
+/* footer */
 .site-footer {
     position: relative;
     padding: 80px 7% 25px;
@@ -1010,11 +994,9 @@ header {
         grid-template-columns: 1fr 1fr;
         gap: 40px 30px;
     }
-
     .footer-brand {
         grid-column: 1 / -1;
     }
-
     .footer-bottom {
         flex-direction: column;
         gap: 8px;
@@ -1091,8 +1073,7 @@ header {
     background: rgba(255, 255, 255, 0.045);
     color: #f8fafc;
     font-size: 14px;
-    transition:
-        border-color 0.25s ease,
+    transition: border-color 0.25s ease,
         background 0.25s ease,
         box-shadow 0.25s ease;
 }
@@ -1104,8 +1085,7 @@ header {
 .form-group input:focus {
     border-color: rgba(255, 79, 163, 0.7);
     background: rgba(255, 255, 255, 0.065);
-    box-shadow:
-        0 0 0 3px rgba(255, 79, 163, 0.08),
+    box-shadow: 0 0 0 3px rgba(255, 79, 163, 0.08),
         0 0 20px rgba(255, 79, 163, 0.08);
 }
 
@@ -1169,8 +1149,7 @@ header {
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 10px 30px rgba(168, 85, 247, 0.18);
-    transition:
-        transform 0.25s ease,
+    transition: transform 0.25s ease,
         box-shadow 0.25s ease;
 }
 
@@ -1201,7 +1180,6 @@ header {
 }
 
 /* mobile */
-
 @media (max-width: 800px) {
     .signup-page {
         grid-template-columns: 1fr;
@@ -1276,16 +1254,11 @@ header {
 .ambient-wave span {
     width: 3px;
     border-radius: 999px;
-    background:
-        linear-gradient(to bottom,
-            #ff4fa3,
-            #a855f7,
-            #4d8dff);
+    background: linear-gradient(to bottom, #ff4fa3, #a855f7, #4d8dff);
     animation: wavePulse 2.8s ease-in-out infinite;
 }
 
 /* different bar heights */
-
 .ambient-wave span:nth-child(1) {
     height: 30px;
 }
@@ -1371,8 +1344,7 @@ header {
     height: 12px;
     border-radius: 50%;
     background: linear-gradient(135deg,#ff4fa3,#a855f7,#4d8dff);
-    box-shadow:
-        0 0 25px rgba(255, 79, 163, 0.55),
+    box-shadow: 0 0 25px rgba(255, 79, 163, 0.55),
         0 0 45px rgba(168, 85, 247, 0.3);
     animation: dotPulse 3s ease-in-out infinite;
 }
@@ -1382,11 +1354,9 @@ header {
     z-index: 3;
     user-select: none;
     line-height: 1;
-    text-shadow:
-        0 0 15px currentColor,
+    text-shadow: 0 0 15px currentColor,
         0 0 30px currentColor;
-    animation:
-        symbolFloat 5s ease-in-out infinite;
+    animation: symbolFloat 5s ease-in-out infinite;
 }
 
 .note-one {
@@ -1595,8 +1565,7 @@ header {
     color: #f8fafc;
     font-family: inherit;
     font-size: 14px;
-    transition:
-        border-color 0.3s ease,
+    transition: border-color 0.3s ease,
         background 0.3s ease,
         box-shadow 0.3s ease;
 }
@@ -1624,8 +1593,7 @@ header {
     font-weight: 700;
     background: linear-gradient(100deg, #ff4fa3, #a855f7, #4d8dff);
     box-shadow: 0 10px 30px rgba(168, 85, 247, 0.18);
-    transition:
-        transform 0.25s ease,
+    transition: transform 0.25s ease,
         box-shadow 0.25s ease;
 }
 
@@ -1687,8 +1655,8 @@ header {
     }
 }
 
-/* genre dropdown */
 
+/* genre dropdown */
 .genres-card {
     position: relative;
 }
@@ -1714,8 +1682,7 @@ header {
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
-    transition:
-        opacity 0.25s ease,
+    transition: opacity 0.25s ease,
         transform 0.25s ease,
         visibility 0.25s ease;
 }
@@ -1737,8 +1704,7 @@ header {
     font-size: 12px;
     text-align: left;
     cursor: pointer;
-    transition:
-        background 0.2s ease,
+    transition: background 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
 }
@@ -1780,7 +1746,6 @@ header {
 }
 
 /* country dropdown  */
-
 .countries-card {
     position: relative;
 }
@@ -1806,8 +1771,7 @@ header {
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
-    transition:
-        opacity 0.25s ease,
+    transition: opacity 0.25s ease,
         transform 0.25s ease,
         visibility 0.25s ease;
 }
@@ -1829,8 +1793,7 @@ header {
     font-size: 12px;
     text-align: left;
     cursor: pointer;
-    transition:
-        background 0.2s ease,
+    transition: background 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
 }
@@ -1873,7 +1836,6 @@ header {
 
 
 /* search area */
-
 .card-search {
     display: flex;
     align-items: center;
@@ -1888,8 +1850,7 @@ header {
     visibility: hidden;
     transform: translateY(-7px);
     pointer-events: none;
-    transition:
-        opacity 0.3s ease,
+    transition: opacity 0.3s ease,
         transform 0.3s ease,
         visibility 0.3s ease,
         border-color 0.3s ease,
@@ -1897,7 +1858,6 @@ header {
 }
 
 /* input */
-
 .card-search-input {
     flex: 1;
     min-width: 0;
@@ -1915,7 +1875,6 @@ header {
 }
 
 /* search button */
-
 .card-search-button {
     display: flex;
     align-items: center;
@@ -1929,8 +1888,7 @@ header {
     srgb (a color space) = standard rgb color system */
     background: color-mix(in srgb, var(--card-glow) 23%, transparent);
     cursor: pointer;
-    transition:
-        background 0.25s ease,
+    transition: background 0.25s ease,
         transform 0.25s ease;
 }
 
@@ -1950,8 +1908,7 @@ header {
 /* focus glow */
 .search-card.search-open .card-search:focus-within {
     border-color: color-mix(in srgb, var(--card-border) 40%, transparent);
-    box-shadow:
-        0 0 0 3px color-mix(in srgb, var(--card-glow) 6%, transparent),
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--card-glow) 6%, transparent),
         0 0 20px color-mix(in srgb, var(--card-glow) 8%, transparent);
 }
 
@@ -1972,7 +1929,6 @@ header {
     --card-background: #111118;
     --text-primary: #f8fafc;
     --text-secondary: #a1a1aa;
-
     --border-color: #27272a;
     --border-hover: #3f3f46;
     width: 100%;
@@ -2080,8 +2036,7 @@ header {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     background: var(--card-background);
-    transition:
-        transform 0.25s ease,
+    transition: transform 0.25s ease,
         border-color 0.25s ease;
 }
 
@@ -2198,8 +2153,7 @@ header {
 .contact-arrow {
     font-size: 22px;
     color: #a1a1aa;
-    transition:
-        color 0.2s ease,
+    transition: color 0.2s ease,
         transform 0.2s ease;
 }
 
